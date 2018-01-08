@@ -23,7 +23,9 @@ class UserVisitTest(unittest.TestCase):
         self.assertIn(correct_title, title)
         self.assertIn(correct_title, header_text)
 
-        self.fail('Finish the test!')
+        # Checks to see if the base.html is extended by the home_page
+        home_page_link = self.browswer.find_element_by_id('home_page')
+        self.assertIn(home_page_link, self.browswer)
 
 
 if __name__ == '__main__':
