@@ -9,8 +9,18 @@
             <header>
                 <h1>JonnyJE Technical Support</h1>
             </header>
+            <nav>
+                <p>
+                    <a href="{% url 'home:home_page'%}" id="home_page">Home</a> -
+                    <a>About</a> -
+                    <a>Compare</a> -
+                    <a>Contact</a> -
+                    <a>Guides</a> -
+                    <a>Services</a>
+                </p>
+            </nav>
         </div>
-        {% block content %}
-        {% endblock %}
+        {% block content %}{% endblock %}
+        <footer>Ⓒ 2018 JonnyJE Technical Support</footer>
     </body>
 </html>
