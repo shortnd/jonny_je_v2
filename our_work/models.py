@@ -8,4 +8,4 @@ class OurWork(models.Model):
     imageURL = models.CharField(max_length=300)
 
     def __str__(self):
-        return self.imageURL
+        return self.title
