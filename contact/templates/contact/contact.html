@@ -2,4 +2,9 @@
 {% block title %}Contact{% endblock %}
 {% block content %}
     <h2>Contact Page</h2>
+    <form role="form" method="post">
+        {% csrf_token %}
+        {{ contact_form.as_p }}
+        <button type="submit">Submit</button>
+    </form>
 {% endblock %}
