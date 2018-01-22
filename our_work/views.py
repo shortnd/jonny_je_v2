@@ -1,5 +1,5 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render
 
 
 def our_work(request):
-    return HttpResponse('<h2>Our Work</h2>')
+    return render(request, 'our_work/our_work.html')
