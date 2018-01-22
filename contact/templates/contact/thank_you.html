@@ -1,0 +1,11 @@
+{% extends "basepage/base.html" %}
+{% block title %}
+    Thank You! | {{ block.super }}
+{% endblock %}
+{% block content %}
+    <h1>Thank you!</h1>
+    <p>Thank you for contacting us. Please allow 24 - 48 hours for someone to response. Have a great day!</p>
+    <h4>
+        <a href="{% url 'home:home_page' %}">Home</a>
+    </h4>
+{% endblock %}
