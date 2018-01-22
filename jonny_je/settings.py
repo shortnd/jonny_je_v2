@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'basepage',
     'contact',
     'about_page',
+    'our_work',
 ]
 
 MIDDLEWARE = [
