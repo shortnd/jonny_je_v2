@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, reverse
 from django.core import mail
 
 from .form import ContactForm
@@ -45,8 +45,12 @@ def contact_page(request):
                            # ['contact@jonnyje.com', 'coconnell@jonnyje.com']
                            [''],
                            fail_silently=True)
-        return redirect('thank_you')
+        return redirect(reverse('contact:thank_you'))
 
     return render(request, 'contact/contact.html', {
         'contact_form': contact_form,
     })
+
+
+def thank_you(request):
+    return render(request, 'contact/thank_you.html')
